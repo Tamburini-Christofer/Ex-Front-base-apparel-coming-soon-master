@@ -5,7 +5,26 @@
 }
 
 body{
-    font-family: ;
+    color: hsl(0, 36%, 70%);
+    font-weight: 400;
+    font-family: "Josefin Sans",'Courier New', Courier, monospace;
+}
+
+h1{
+    line-height: 60px;
+    letter-spacing: 12px;
+    font-size: 56px;
+    font-weight:200;
+}
+
+p{
+    margin: 20px 0;
+    line-height: 26px;
+}
+
+strong{
+    font-weight: 600;
+    color: black;
 }
 
 main{
@@ -31,7 +50,16 @@ main{
 }
 
 .ct_sx_down{
-    background-color: rgb(50, 199, 60);
     height: 80vh;
+    width: 100%; 
+    padding: 50px 212px;   
+}
+
+input{
+    color: hsl(0, 36%, 70%);;
+    border: 1px solid hsl(0, 36%, 70%);
+    border-radius: 30px;
+    padding: 15px 20px;
     width: 100%;
+    
 }
