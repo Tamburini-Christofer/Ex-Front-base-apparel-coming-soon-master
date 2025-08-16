@@ -11,14 +11,15 @@ body{
 }
 
 h1{
-    line-height: 60px;
-    letter-spacing: 12px;
-    font-size: 56px;
+    line-height: 50px;
+    letter-spacing: 10px;
+    font-size: 50px;
     font-weight:200;
+    margin-top: 20px;
 }
 
 p{
-    margin: 20px 0;
+    margin: 20px 0 0px 0;
     line-height: 26px;
 }
 
@@ -32,9 +33,9 @@ main{
 }
 
 .ct_sx_up{
-    background-color: rgb(199, 139, 50);
-    height: 20vh;
+    padding: 50px 210px ;
     width: 100%;
+    height: 20vh;
 }
 
 .ct{
@@ -49,17 +50,115 @@ main{
     width:60%;
 }
 
+.ct_dx_resp{
+    display: none;
+    background-image: url(../img/hero-mobile.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50vh;
+    width:100%;
+}
+
 .ct_sx_down{
-    height: 80vh;
     width: 100%; 
-    padding: 50px 212px;   
+    padding: 30px 212px 0 212px;   
 }
 
 input{
-    color: hsl(0, 36%, 70%);;
+    color: hsl(0, 36%, 70%);
+    background-repeat: no-repeat;
     border: 1px solid hsl(0, 36%, 70%);
     border-radius: 30px;
     padding: 15px 20px;
     width: 100%;
-    
+    margin-bottom:5px ;
 }
+
+.ct_sx_down form div img{
+    border-radius: 50px;
+    background-image: linear-gradient(to right, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    padding: 14px 34px;
+    transform: translate(321px, 51px);
+}
+
+.ct_sx_down form div img:hover{
+    cursor: pointer;
+    background-image: linear-gradient(to right, hsl(0, 80%, 86%),hsl(0, 58%, 88%));
+}
+
+.error{
+    border-radius: 50px;
+    background-image: linear-gradient(to right, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+    padding: 14px 34px;
+    transform: translate(321px, 51px);
+}
+
+.ct_sx_down form div img:nth-child(2){
+    background-image: transparent;
+    background-color: white;
+    border: 0;
+    padding: 0;
+    transform: translate(195px, 40px);
+}
+
+.ct_sx_down form div img:nth-child(2){
+    opacity: 0;
+    background-image: transparent;
+    background-color: white;
+    border: 0;
+    padding: 0;
+    transform: translate(195px, 40px);
+}
+
+input:invalid{
+    border: 2px solid red;
+}
+
+input:invalid .ct_sx_down form div img:nth-child(2){
+    opacity: 1;
+}
+
+form div span{
+    opacity: 0;
+    font-size: 10px;
+    margin: 0 0 0 20px;
+    color: red;
+}
+
+input:invalid .error{
+    opacity: 1;
+}
+
+/************************************************************/
+/*Responsive*/
+
+@media screen and (max-width:380px) {
+    
+        main{
+            flex-direction: column;
+        }
+
+        .ct_sx_down {
+        width: 90%;
+        padding: 30px;
+        text-align: center;
+        }
+
+        .ct_sx_up {
+        padding: 40px 40px;
+        }
+
+        .ct_dx {
+        display: none;
+        }
+
+        .ct_dx_resp{
+            display: block;
+        }
+
+        .ct_sx_down form div img {
+        transform: translate(135px, 52px);
+        }
+
+}
+
