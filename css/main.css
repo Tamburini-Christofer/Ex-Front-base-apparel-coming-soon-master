@@ -1,0 +1,37 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: ;
+}
+
+main{
+    display: flex;
+}
+
+.ct_sx_up{
+    background-color: rgb(199, 139, 50);
+    height: 20vh;
+    width: 100%;
+}
+
+.ct{
+    width: 110%;
+}
+
+.ct_dx{
+    background-image: url(../img/hero-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width:60%;
+}
+
+.ct_sx_down{
+    background-color: rgb(50, 199, 60);
+    height: 80vh;
+    width: 100%;
+}
